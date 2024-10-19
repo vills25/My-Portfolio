@@ -12,9 +12,9 @@ const Contact = () => {
         </div>
 
         <div className="social-icons">
-          <a href="https://www.linkedin.com/in/vishal-sohaliya-a177b2277/" target="_blank" rel="noopener noreferrer"><i className="fab fa-linkedin"></i></a>
-          <a href="https://github.com/vills25" target="_blank" rel="noopener noreferrer"><i className="fab fa-github"></i></a>
-          <a href="https://app.daily.dev/vishalsohaliya" target="_blank" rel="noopener noreferrer"><i className="fab fa-twitter"></i></a>
+          <a href="https://www.linkedin.com/in/vishal-sohaliya-a177b2277/"><i className="fab fa-linkedin"></i></a>
+          <a href="https://github.com/vills25"><i className="fab fa-github"></i></a>
+          <a href="https://app.daily.dev/vishalsohaliya"><i className="fab fa-twitter"></i></a>
         </div>
 
         <p>&copy; 2024 Vishal Sohaliya. All rights reserved.</p>
