@@ -60,3 +60,22 @@ section#home {
   color: #ffffff;
   font-size: 1.25rem;
 }
+
+.social-button {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 1rem; 
+  background-color: #444; 
+  color: white; 
+  border-radius: 25px;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.social-button:hover {
+  background-color: #555; /
+  transform: scale(1.05); 
+}
+
+.social-button svg {
+  font-size: 1.5rem;
+}

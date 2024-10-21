@@ -1,5 +1,7 @@
 import React from 'react';
 import './Home.css';
+import { FaLinkedin, FaGithub } from "react-icons/fa";
+import { SiDailydotdev } from "react-icons/si";
 
 const Home = () => {
   return (
@@ -23,9 +25,15 @@ const Home = () => {
       </p>
 
       <div className="flex space-x-4 mt-5">
-        <a href="https://www.linkedin.com/in/vishalsohalia-a177b2277/" className="block p-2 bg-gray-800 text-white">LinkedIn</a>
-        <a href="https://github.com/vills25" className="block p-2 bg-gray-800 text-white">GitHub</a>
-        <a href="https://app.daily.dev/vishalsohaliya" className="block p-2 bg-gray-800 text-white">DevApp</a>
+        <a href="https://www.linkedin.com/in/vishalsohalia-a177b2277/" className="social-button flex items-center">
+          <FaLinkedin className="mr-2" /> LinkedIn
+        </a>
+        <a href="https://github.com/vills25" className="social-button flex items-center">
+          <FaGithub className="mr-2" /> GitHub
+        </a>
+        <a href="https://app.daily.dev/vishalsohaliya" className="social-button flex items-center">
+          <SiDailydotdev className="mr-2" /> DevApp
+        </a>
       </div>
     </section>
   );
