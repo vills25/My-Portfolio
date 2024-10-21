@@ -1,13 +1,19 @@
 import React, { useState } from 'react';
 import { Link } from 'react-scroll';
+import { FaBars, FaTimes } from 'react-icons/fa'; 
 import profilePic from './Pic.jpg';
 import './Navbar.css';
 
 const Navbar = () => {
   const [activeLink, setActiveLink] = useState('home');
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  const handleToggleMenu = () => {
+    setMenuOpen(!menuOpen);
+  };
 
   return (
-    <nav className="bg-white bg-opacity-60 backdrop-blur-lg fixed w-full shadow-md z-50">
+    <nav className="bg-white bg-opacity-50 backdrop-blur-md fixed w-full shadow-md z-50">
       <div className="container mx-auto px-4 py-3 flex justify-between items-center">
         <div className="flex items-center">
           <img 
@@ -18,7 +24,14 @@ const Navbar = () => {
           <h1 className="text-2xl font-bold text-gradient">VISHAL SOHALIYA</h1>
         </div>
 
-        <ul className="hidden lg:flex space-x-6">
+        {/* Hamburger Menu for Mobile */}
+        <div className="lg:hidden">
+          <button onClick={handleToggleMenu} className="text-2xl focus:outline-none">
+            {menuOpen ? <FaTimes /> : <FaBars />}
+          </button>
+        </div>
+
+        <ul className={`lg:flex space-x-6 ${menuOpen ? 'block' : 'hidden'} lg:block`}>
           <li>
             <Link 
               to="home" 

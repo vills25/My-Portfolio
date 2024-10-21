@@ -1,24 +1,60 @@
 nav {
-    padding: 1rem 0;
-    background: rgba(255, 255, 255, 0.2);
-    backdrop-filter: blur(10px);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    font-weight: bold;
+  padding: 1rem 0;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  font-weight: bold;
+}
+
+nav ul li a {
+  color: #1a0909;
+  font-weight: 700;
+  padding: 10px 20px;
+  border: 2px solid transparent;
+  border-radius: 25px;
+  transition: all 0.1s ease;
+  cursor: pointer;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+  color: #1a0909;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-color: #203a43;
+}
+
+button {
+  background: none;
+  border: none;
+}
+
+button:focus {
+  outline: none;
+}
+
+@media (max-width: 1024px) {
+  ul {
+    display: none;
+    flex-direction: column;
+    text-align: center;
   }
 
-  nav ul li a {
-    color: #1a0909;
-    font-weight: 700;
-    padding: 10px 20px;
-    border: 2px solid transparent;
-    border-radius: 25px;
-    transition: all 0.1s ease;
-    cursor: pointer;
+  ul.block {
+    display: block;
   }
-  
-  nav ul li a:hover,
-  nav ul li a.active {
-    color: #1a0909;
-    background-color: rgba(255, 255, 255, 0.1);
-    border-color: #203a43;
+
+  ul li {
+    margin-bottom: 1rem;
   }
+
+  ul li a {
+    display: block;
+    padding: 1rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  ul {
+    display: flex;
+  }
+}
