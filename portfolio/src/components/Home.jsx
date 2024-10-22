@@ -15,7 +15,7 @@ const Home = () => {
           <div className="innerIam">
             Fullstack Developer<br />
             Python Developer<br />
-            React Developer<br />
+            ReactJS Developer<br />
           </div>
         </b>
       </div>
