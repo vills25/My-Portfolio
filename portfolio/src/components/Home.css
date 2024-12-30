@@ -1,10 +1,24 @@
 section#home {
-  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
   flex-direction: column;
+  background: linear-gradient(135deg, #ff7e5f, #feb47b, #008080, #00f260);
+  background-size: 400% 400%;
+  animation: gradientMove 8s infinite;
+  position: relative;
+  overflow: hidden;
+}
+section#home::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("https://www.transparenttextures.com/patterns/cubes.png");
+  opacity: 0.3;
 }
 
 .Introparagraph {
@@ -13,10 +27,21 @@ section#home {
 }
 
 .Introparagraph h2 {
-  background: linear-gradient(to right, #00bfff, #1e90ff, #4682b4);
   -webkit-background-clip: text;
+  animation: fadeIn 2s ease-in-out forwards;
   color: transparent;
   margin-bottom: 1rem;
+  font-family: Serena, sans-serif;
+}
+.Introparagraph,
+.Iam,
+.description {
+  background: rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(8px);
+  padding: 1.5rem;
+  border-radius: 20px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
 }
 
 .Iam {
@@ -39,43 +64,111 @@ section#home {
 
 .Iam .innerIam {
   display: inline-block;
-  color: #00ffbf;
+  color: #071c2f;
   position: relative;
   white-space: nowrap;
   animation: scrollText 6s infinite;
-}
-
-@keyframes scrollText {
-  0% { transform: translateY(0); }
-  25% { transform: translateY(0); }     
-  33% { transform: translateY(-40px); }   
-  58% { transform: translateY(-40px); }  
-  66% { transform: translateY(-80px); }  
-  91% { transform: translateY(-80px); }   
-  100% { transform: translateY(0); }      
 }
 
 .description {
   margin-top: 2rem;
   color: #ffffff;
   font-size: 1.25rem;
+  animation: slideIn 2s 1s ease-in-out forwards;
 }
 
 .social-button {
   display: flex;
   align-items: center;
-  padding: 0.5rem 1rem; 
-  background-color: #444; 
-  color: white; 
+  padding: 0.5rem 1rem;
+  background-color: #444;
+  color: white;
   border-radius: 25px;
-  transition: background-color 0.3s, transform 0.3s;
+  transition: transform 0.2s, box-shadow 0.3s;
 }
 
 .social-button:hover {
-  background-color: #555; /
-  transform: scale(1.05); 
+  transform: translateY(-5px);
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
 }
 
 .social-button svg {
   font-size: 1.5rem;
+}
+
+@font-face {
+  font-family: "Serena";
+  src: url("./assets/fonts/Serena.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@keyframes scrollText {
+  0% {
+    transform: translateY(0);
+  }
+  25% {
+    transform: translateY(0);
+  }
+  33% {
+    transform: translateY(-40px);
+  }
+  58% {
+    transform: translateY(-40px);
+  }
+  66% {
+    transform: translateY(-80px);
+  }
+  91% {
+    transform: translateY(-80px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes gradientMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideIn {
+  0% {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
