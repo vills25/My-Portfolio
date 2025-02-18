@@ -4,11 +4,12 @@ import { FaLinkedin, FaGithub } from "react-icons/fa";
 import { SiDailydotdev } from "react-icons/si";
 
 const Home = () => {
+  
   return (
     <section id="home" className="h-screen flex flex-col justify-center items-center bg-gradient-to-r from-[#FFDAB9] to-[#008080]">
       <div className="Introparagraph text-center">
         <h2 className="text-5xl font-bold gradient-text bg-gradient-to-r from-[#003366] to-[#FF6600]">
-          HEY, I'M VISHAL SOHALIYA
+          &lt; I'M VISHAL SOHALIYA /&gt;
         </h2>
       </div>
 
