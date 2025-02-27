@@ -28,12 +28,16 @@ section#home::before {
 }
 
 .Introparagraph h2 {
+  font-size: 3rem;
+  font-weight: bold;
+  background: linear-gradient(to right, #003366, #FF6600);
   -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
   animation: fadeIn 2s ease-in-out forwards;
-  color: transparent;
-  margin-bottom: 1rem;
-  font-family: Serena, sans-serif;
+  font-family: 'India2023', sans-serif;
 }
+
 .Introparagraph,
 .Iam,
 .description {
@@ -71,6 +75,11 @@ section#home::before {
   animation: scrollText 6s infinite;
 }
 
+.custom-font {
+  font-family: 'India2023', sans-serif;
+}
+
+
 .description {
   margin-top: 2rem;
   color: #ffffff;
@@ -106,6 +115,14 @@ section#home::before {
   font-weight: normal;
   font-style: normal;
 }
+
+@font-face {
+  font-family: 'India2023';
+  src: url('../assets/fonts/INDIA2023-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
 
 @keyframes scrollText {
   0% {

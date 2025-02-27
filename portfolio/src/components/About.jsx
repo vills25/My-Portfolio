@@ -22,7 +22,7 @@ const About = () => {
           </div>
 
           {/* Right Column: Skills Grid*/}
-          <div className="grid grid-cols-3 gap-3 justify-items-center mt-6">
+          <div className="grid grid-cols-3 gap-3 justify-items-center mt-6 custom-font">
             {[
               'ReactJS', 'Python', 'HTML', 
               'CSS', 'C', 'C++', 

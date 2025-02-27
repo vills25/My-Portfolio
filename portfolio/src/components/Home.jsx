@@ -8,11 +8,11 @@ const Home = () => {
   return (
     <section id="home" className="h-screen flex flex-col justify-center items-center bg-gradient-to-r from-[#FFDAB9] to-[#008080]">
       <div className="Introparagraph text-center">
-        <h2 className="text-5xl font-bold gradient-text bg-gradient-to-r from-[#003366] to-[#FF6600]">
+        <h2 className="text-5xl font-bold gradient-text bg-gradient-to-r from-[#003366] to-[#FF6600] custom-font">
           &lt; I'M VISHAL SOHALIYA /&gt;
         </h2>
       </div>
-
+ 
       <div className="Iam">
         <b>
           <div className="innerIam">

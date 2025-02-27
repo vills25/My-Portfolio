@@ -1,0 +1,10 @@
+.custom-font {
+    font-family: 'India2023', sans-serif;
+  }
+
+  @font-face {
+    font-family: 'India2023';
+    src: url('../assets/fonts/INDIA2023-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+  }  
