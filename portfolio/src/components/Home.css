@@ -108,13 +108,13 @@ section#home::before {
   font-size: 1.5rem;
 }
 
-
+/* 
 @font-face {
   font-family: "Serena";
   src: url("./assets/fonts/Serena.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
-}
+} */
 
 @font-face {
   font-family: 'India2023';
@@ -123,6 +123,17 @@ section#home::before {
   font-style: normal;
 }
 
+
+@media (max-width: 768px) {
+  html {
+      font-size: 14px; /* या percentage में सेट करो */
+  }
+}
+@media (max-width: 480px) {
+  h1 {
+      font-size: 1.5rem; /* Mobile के लिए */
+  }
+}
 
 @keyframes scrollText {
   0% {
