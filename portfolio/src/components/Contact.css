@@ -47,6 +47,16 @@ footer {
     font-size: 0.875rem;
   }
 
+  .contact-link {
+    color: blue;
+    text-decoration: underline;
+    font-weight: bold;
+  }
+  .contact-link:hover {
+    color: darkblue;
+  }
+  
+
   
   
   @media (max-width: 768px) {
