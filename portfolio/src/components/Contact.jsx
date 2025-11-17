@@ -3,7 +3,7 @@ import './Contact.css';
 
 const Contact = () => {
   return (
-    <section id="contact" className="h-screen flex justify-center items-center bg-white">
+    <section id="contact" className=" flex justify-center items-center bg-white">
       <footer className="footer">
         <div className="contact-info">
           <h3>Contact Information</h3>
