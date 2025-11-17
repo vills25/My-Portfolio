@@ -4,6 +4,9 @@ import ProjectImg1 from './ProjectsIMG1.jpg';
 import ProjectImg2 from './ProjectsIMG2.jpg';
 import ProjectImg3 from './ProjectsIMG3.jpg';
 import ProjectImg4 from './ProjectsIMG4.jpg';
+import ProjectImg5 from './ProjectsIMG5.jpg';
+import ProjectImg6 from './ProjectsIMG6.jpg';
+import ProjectImg7 from './ProjectsIMG7.jpg';
 
 const projects = [
   {
@@ -29,7 +32,25 @@ const projects = [
     description: 'This web-based application provides a simple and effective way to manage your daily tasks. A minimalist design ensures a focused and distraction-free experience.',
     image: ProjectImg4,
     link: 'https://github.com/vills25/tops-assignment/tree/main/Frontend/Frontend%20Assignments/React%20JS/Lists%2C%20Hooks%2C%20Local%20storages%2C%20Api/todo-list'
-  }
+  },
+  {
+    title: 'Car-Pooling System (Backend API)',
+    description: 'Developed a secure ride-sharing API with JWT authentication and role-based access for drivers and passengers. Implemented geo-distance calculation to find nearby rides within a 20km radius and automate fare pricing. Features include dynamic booking management, ride status tracking, and automated email notifications for a seamless user experience.',
+    image: ProjectImg5,
+    link: 'https://github.com/vills25/Car-Pooling-System'
+  },
+  {
+    title: 'Trello-like Task Management API',
+    description: 'Built a collaborative task management system featuring boards, task cards, and subtasks with role-based permissions. Implemented advanced features like checklist progress tracking, moving/copying tasks between boards, and due-date notifications. Enabled data export in multiple formats (JSON, CSV, PDF) for enhanced productivity and reporting.',
+    image: ProjectImg6,
+    link: 'https://github.com/vills25/Trello-Task-Management'
+  },
+  {
+    title: 'Medium Blog Website (Backend API)',
+    description: 'Engineered a full-featured blogging platform backend with article management, multi-topic categorization, and publication systems. Integrated social features including clapping, commenting, and user/publication following. Implemented reading lists, content sharing, and member-only articles to mimic core Medium functionalities.',
+    image: ProjectImg7,
+    link: 'https://github.com/vills25/Medium-Blogs-RestAPI'
+  },
 ];
 
 const Projects = () => {
